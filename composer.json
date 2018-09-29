@@ -14,7 +14,7 @@
     "psr-4": {
       "CloudDoctor\\": "src/"
     }
-  }
+  },
   "require": {
     "php-school/cli-menu": "^2.0.0"
   }
