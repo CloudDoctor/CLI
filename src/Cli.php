@@ -24,6 +24,7 @@ class Cli
             -D --deploy Run Deployment
             --purge Purge everything deployed. Danger will robinson!
             --scale Check scalings
+            --watch Wait for changes to settings files and run --scale when it changes!
             ";
         $arguments.="-h --help Show this help\n";
 
@@ -40,11 +41,7 @@ class Cli
             $this->cloudDoctor = new CloudDoctor();
         }
 
-        $this->cloudDoctor->assertFromFile(
-            "cloud-definition.yml",
-            "cloud-definition.override.yml",
-            "cloud-definition.automation-override.yml"
-        );
+        $this->assertFromFiles();
         
         $this->menu = new CliMenuBuilder();
         $this->menu->setBackgroundColour('black');
@@ -67,6 +64,14 @@ class Cli
             $scope->cloudDoctor->purge();
             $menu->redraw();
         });
+    }
+
+    public function assertFromFiles(){
+        $this->cloudDoctor->assertFromFile(
+            "cloud-definition.yml",
+            "cloud-definition.override.yml",
+            "cloud-definition.automation-override.yml"
+        );
     }
 
     public function run()
@@ -102,6 +107,9 @@ class Cli
                     break;
                 case 'scale':
                     $this->cloudDoctor->scale();
+                    break;
+                case 'watch':
+                    $this->cloudDoctor->watch($this);
                     break;
                 default:
                     foreach ($this->getApplicationSpecificCommands() as $command) {
