@@ -1,0 +1,21 @@
+{
+  "name": "cloud-doctor/cli",
+  "authors": [
+    {
+      "name": "Matthew Baggett",
+      "email": "matthew@baggett.me"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "CloudDoctor\\": "src/"
+    }
+  }
+  "require": {
+    "php-school/cli-menu": "^2.0.0"
+  }
+}
