@@ -14,6 +14,21 @@ class Cli{
     /** @var CloudDoctor */
     protected $cloudDoctor;
 
+    private function checkForArguments()
+    {
+        $arguments = "
+            Usage: {self} [options]
+            -s --show Show the stack as CloudDoctor understands it
+            -D --deploy Run Deployment
+            --purge Purge everything deployed. Danger will robinson!
+            ";
+        $arguments.="-h --help Show this help\n";
+
+        $values = CLIOpts::run($arguments);
+
+        return $values;
+    }
+
     public function __construct(CloudDoctor $cloudDoctor = null)
     {
         if($cloudDoctor){
@@ -39,6 +54,11 @@ class Cli{
             $scope->cloudDoctor->deploy();
             $menu->redraw();
         });
+        $this->menu->addItem('Show', function (CliMenu $menu) use ($scope) {
+            /** @var CloudDoctor $scope */
+            $scope->cloudDoctor->show();
+            $menu->redraw();
+        });
         $this->menu->addItem('Purge', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->purge();
@@ -46,22 +66,10 @@ class Cli{
         });
     }
 
-    private function checkForArguments()
+    public function run()
     {
-        $arguments = "
-            Usage: {self} [options]
-            -D --deploy Run Deployment
-            --purge Purge everything deployed. Danger will robinson!
-            ";
-        $arguments.="-h --help Show this help\n";
-
-        $values = CLIOpts::run($arguments);
-
-        return $values;
-    }
-
-    public function run(){
         $values = $this->checkForArguments();
+        
         if ($values->count()) {
             $this->runNonInteractive();
         } else {
@@ -76,13 +84,13 @@ class Cli{
 
     private function runNonInteractive()
     {
-        if($this->zenderator) {
-            $this->zenderator->disableWaitForKeypress();
-        }
         $values = $this->checkForArguments();
         // non-interactive mode
         foreach ($values as $name => $value) {
             switch ($name) {
+                case 'show':
+                    $this->cloudDoctor->show();
+                    break;
                 case 'deploy':
                     $this->cloudDoctor->deploy();
                     break;
