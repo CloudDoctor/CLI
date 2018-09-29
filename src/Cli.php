@@ -6,7 +6,9 @@ use PhpSchool\CliMenu\CliMenu;
 use PhpSchool\CliMenu\CliMenuBuilder;
 use PhpSchool\CliMenu\MenuItem\AsciiArtItem;
 use PhpSchool\CliMenu\MenuItem\SelectableItem;
-class Cli{
+
+class Cli
+{
 
     /** @var CliMenuBuilder */
     protected $menu;
@@ -32,9 +34,9 @@ class Cli{
 
     public function __construct(CloudDoctor $cloudDoctor = null)
     {
-        if($cloudDoctor){
+        if ($cloudDoctor) {
             $this->cloudDoctor = $cloudDoctor;
-        }else{
+        } else {
             $this->cloudDoctor = new CloudDoctor();
         }
 
