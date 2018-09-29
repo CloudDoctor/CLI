@@ -21,6 +21,7 @@ class Cli{
             -s --show Show the stack as CloudDoctor understands it
             -D --deploy Run Deployment
             --purge Purge everything deployed. Danger will robinson!
+            --scale Check scalings
             ";
         $arguments.="-h --help Show this help\n";
 
@@ -40,7 +41,7 @@ class Cli{
         $this->cloudDoctor->assertFromFile(
             "cloud-definition.yml",
             "cloud-definition.override.yml",
-            "cloud-defintion.automation-override.yml"
+            "cloud-definition.automation-override.yml"
         );
         
         $this->menu = new CliMenuBuilder();
@@ -69,7 +70,7 @@ class Cli{
     public function run()
     {
         $values = $this->checkForArguments();
-        
+
         if ($values->count()) {
             $this->runNonInteractive();
         } else {
@@ -96,6 +97,9 @@ class Cli{
                     break;
                 case 'purge':
                     $this->cloudDoctor->purge();
+                    break;
+                case 'scale':
+                    $this->cloudDoctor->scale();
                     break;
                 default:
                     foreach ($this->getApplicationSpecificCommands() as $command) {
