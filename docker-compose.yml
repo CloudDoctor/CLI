@@ -1,0 +1,14 @@
+version: "2.3"
+
+services:
+  babysitter:
+    build: .
+    volumes:
+    - ./cloud-definition.test.yml:/app/cloud-definition.yml:ro
+    - ./cloud-definition.test.override.yml:/app/cloud-definition.override.yml:ro
+    - ./cloud-definition.test.automation-override.yml:/app/cloud-definition.automation-override.yml:rw
+    - ./vendor:/app/vendor:ro
+    - ./config-test:/app/config:rw
+    - $HOME/.ssh:/root/.ssh:ro
+
+
