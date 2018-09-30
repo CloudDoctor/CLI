@@ -8,6 +8,7 @@ services:
     - ./cloud-definition.vpnondemand.override.yml:/app/cloud-definition.override.yml:ro
     - ./cloud-definition.vpnondemand.automation-override.yml:/app/cloud-definition.automation-override.yml:rw
     - ./config/vpnondemand/:/app/config/:rw
+    - ./stacks:/app/stacks:ro
     - ./src:/app/src
     - ./vendor:/app/vendor
     - $HOME/.ssh:/root/.ssh:ro

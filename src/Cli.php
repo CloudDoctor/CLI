@@ -23,6 +23,7 @@ class Cli
             -s --show Show the stack as CloudDoctor understands it
             -D --deploy Run Deployment
             --download-certs Download SSL certificates from master
+            --update-stacks Update Docker Swarm stackfiles
             --update-meta Update metadata stored with providers
             --purge Purge everything deployed. Danger will robinson!
             --scale Check scalings
@@ -51,21 +52,25 @@ class Cli
         $this->menu->setTitle($this->cloudDoctor->getName());
 
         $scope = $this;
+
         $this->menu->addItem('Deploy', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->deploy();
             $menu->redraw();
         });
+
         $this->menu->addItem('Show', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->show();
             $menu->redraw();
         });
+
         $this->menu->addItem('Purge', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->purge();
             $menu->redraw();
         });
+
         $this->menu->addItem('Download Certs', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->downloadCerts();
@@ -75,6 +80,12 @@ class Cli
         $this->menu->addItem('Update Metadata', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->updateMetaData();
+            $menu->redraw();
+        });
+
+        $this->menu->addItem('Update Stacks', function (CliMenu $menu) use ($scope) {
+            /** @var CloudDoctor $scope */
+            $scope->cloudDoctor->updateStacks();
             $menu->redraw();
         });
     }
@@ -129,6 +140,9 @@ class Cli
                     break;
                 case 'update-meta':
                     $this->cloudDoctor->updateMetaData();
+                    break;
+                case 'update-stacks':
+                    $this->cloudDoctor->updateStacks();
                     break;
                 default:
                     foreach ($this->getApplicationSpecificCommands() as $command) {
