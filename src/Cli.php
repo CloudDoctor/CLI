@@ -23,6 +23,7 @@ class Cli
             -s --show Show the stack as CloudDoctor understands it
             -D --deploy Run Deployment
             --download-certs Download SSL certificates from master
+            --update-meta Update metadata stored with providers
             --purge Purge everything deployed. Danger will robinson!
             --scale Check scalings
             --watch Wait for changes to settings files and run --scale when it changes!
@@ -68,6 +69,12 @@ class Cli
         $this->menu->addItem('Download Certs', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->downloadCerts();
+            $menu->redraw();
+        });
+
+        $this->menu->addItem('Update Metadata', function (CliMenu $menu) use ($scope) {
+            /** @var CloudDoctor $scope */
+            $scope->cloudDoctor->updateMetaData();
             $menu->redraw();
         });
     }
@@ -119,6 +126,9 @@ class Cli
                     break;
                 case 'download-certs':
                     $this->cloudDoctor->downloadCerts();
+                    break;
+                case 'update-meta':
+                    $this->cloudDoctor->updateMetaData();
                     break;
                 default:
                     foreach ($this->getApplicationSpecificCommands() as $command) {
