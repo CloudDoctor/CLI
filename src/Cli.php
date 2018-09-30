@@ -90,7 +90,8 @@ class Cli
         });
     }
 
-    public function assertFromFiles(){
+    public function assertFromFiles()
+    {
         $this->cloudDoctor->assertFromFile(
             "cloud-definition.yml",
             "cloud-definition.override.yml",
