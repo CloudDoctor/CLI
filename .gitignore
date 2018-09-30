@@ -3,3 +3,4 @@ vendor
 data/
 version.json
 *override.yml
+*.vpnondemand.*

@@ -26,4 +26,4 @@ WORKDIR /app
 # Copy cron & worker tasks into location and chmod accordingly.
 ADD ./ /app/
 
-ENTRYPOINT ["/app/vendor/bin/cloud-doctor"]
+ENTRYPOINT ["/app/cloud-doctor"]

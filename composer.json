@@ -7,10 +7,29 @@
     }
   ],
   "license": "GPL-3.0-or-later",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "git@git.gone.io:Gone.io/Cloud-Doctor.git"
+    },{
+      "type": "vcs",
+      "url":  "git@git.gone.io:Gone.io/Cloud-Doctor-Cli.git"
+    },{
+      "type": "vcs",
+      "url":  "git@git.gone.io:Gone.io/Cloud-Doctor-Linode.git"
+    }
+  ],
   "require": {
     "php": "^7.2",
+    "ext-curl": "*",
+    "ext-json": "*",
     "php-school/cli-menu": "^2.0.0",
-    "deweller/cliopts": "^1.0"
+    "deweller/cliopts": "^1.0",
+    "cloud-doctor/cloud-doctor": "dev-master",
+    "cloud-doctor/provider-linode": "dev-master",
+    "rahimi/monolog-telegram": "^1.0",
+    "sentry/sentry": "^1.9",
+    "rollbar/rollbar": "^1.6"
   },
   "autoload": {
     "psr-4": {

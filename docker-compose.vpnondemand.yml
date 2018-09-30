@@ -1,0 +1,13 @@
+version: "2.3"
+
+services:
+  babysitter:
+    image: gone/cloud-doctor
+    volumes:
+    - ./cloud-definition.vpnondemand.yml:/app/cloud-definition.yml:ro
+    - ./cloud-definition.vpnondemand.override.yml:/app/cloud-definition.override.yml:ro
+    - ./cloud-definition.vpnondemand.automation-override.yml:/app/cloud-definition.automation-override.yml:rw
+    - ./config/vpnondemand/:/app/config/:rw
+    - ./src:/app/src
+    - ./vendor:/app/vendor
+    - $HOME/.ssh:/root/.ssh:ro
