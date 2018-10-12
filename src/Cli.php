@@ -53,37 +53,37 @@ class Cli
 
         $scope = $this;
 
-        $this->menu->addItem('Deploy', function (CliMenu $menu) use ($scope) {
+        $this->menu->addItem('Deploy (Assert what we want in the cloud)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->deploy();
             $menu->redraw();
         });
 
-        $this->menu->addItem('Show', function (CliMenu $menu) use ($scope) {
+        $this->menu->addItem('Show (Show the environment installed)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->show();
             $menu->redraw();
         });
 
-        $this->menu->addItem('Purge', function (CliMenu $menu) use ($scope) {
+        $this->menu->addItem('Purge (Destroy Everything!)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->purge();
             $menu->redraw();
         });
 
-        $this->menu->addItem('Download Certs', function (CliMenu $menu) use ($scope) {
+        $this->menu->addItem('Download Certificates (Force-pull the Swarm Certs)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->downloadCerts();
             $menu->redraw();
         });
 
-        $this->menu->addItem('Update Metadata', function (CliMenu $menu) use ($scope) {
+        $this->menu->addItem('Update Metadata (Tags, Groups, etc)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->updateMetaData();
             $menu->redraw();
         });
 
-        $this->menu->addItem('Update Stacks', function (CliMenu $menu) use ($scope) {
+        $this->menu->addItem('Update Stacks (Docker Swarm Stacks!)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->updateStacks();
             $menu->redraw();
