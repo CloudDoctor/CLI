@@ -11,6 +11,7 @@ RUN mkdir /etc/container_environment && \
     php7-openssl \
     php7-tokenizer \
     php7-mbstring \
+    php7-simplexml \
     php7-json \
     php7-zip \
     php7-curl \

@@ -4,6 +4,7 @@ prepare:
 	composer install --ignore-platform-reqs
 
 build:
+	composer dumpautoload -o
 	docker build -t gone/cloud-doctor:latest .
 
 push:
