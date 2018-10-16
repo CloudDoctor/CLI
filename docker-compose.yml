@@ -8,6 +8,7 @@ services:
     - ./cloud-definition.override.yml:/app/cloud-definition.override.yml:ro
     - ./cloud-definition.automation-override.yml:/app/cloud-definition.automation-override.yml:rw
     - ./config:/app/config:rw
+    - ./stacks:/app/stacks:ro
     - $HOME/.ssh:/root/.ssh:ro
 
 
