@@ -1,6 +1,8 @@
 FROM alpine:3.8
 ADD start_runit /sbin/
 RUN mkdir /etc/container_environment && \
+    mkdir /cache && \
+    chmod 777 /cache && \
     chmod a+x /sbin/start_runit && \
     mkdir /etc/service && \
     mkdir /etc/runit_init.d && \

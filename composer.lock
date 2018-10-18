@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.69.7",
+            "version": "3.69.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "24d9a07aba51a61a889d7ce427605f12087e3b42"
+                "reference": "1a7baa9aea970b103a7651a3898002e1a9f0eef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/24d9a07aba51a61a889d7ce427605f12087e3b42",
-                "reference": "24d9a07aba51a61a889d7ce427605f12087e3b42",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1a7baa9aea970b103a7651a3898002e1a9f0eef1",
+                "reference": "1a7baa9aea970b103a7651a3898002e1a9f0eef1",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-10-15T21:16:38+00:00"
+            "time": "2018-10-17T20:39:50+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -150,7 +150,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor.git",
-                "reference": "82e68c1aae62ef231a21b7e33a7313707588035b"
+                "reference": "d7d84adf4b5fae7cda3414509a7591621fd674e6"
             },
             "require": {
                 "ext-curl": "*",
@@ -190,7 +190,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-16T00:11:05+00:00"
+            "time": "2018-10-16T16:50:50+00:00"
         },
         {
             "name": "cloud-doctor/provider-aws",
@@ -198,7 +198,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor-AWS.git",
-                "reference": "59337601a3ae7fd62f9c0f326078db828a32a8c1"
+                "reference": "ef48dac1f030bbd9bf3e8aa2e38f2d63061d2f27"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.67.22",
@@ -221,7 +221,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-16T00:11:05+00:00"
+            "time": "2018-10-16T16:50:50+00:00"
         },
         {
             "name": "cloud-doctor/provider-linode",
@@ -229,7 +229,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor-Linode.git",
-                "reference": "3425ec6dab8de8eff5c4c64cb5b82e8de3d71aaf"
+                "reference": "78a1b41987e84cb6cfd7e95b8bb74ddab32663fe"
             },
             "require": {
                 "ext-curl": "*",
@@ -252,7 +252,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-16T00:11:05+00:00"
+            "time": "2018-10-16T16:51:12+00:00"
         },
         {
             "name": "deweller/cliopts",
