@@ -1,0 +1,7 @@
+config/
+stacks/
+cloud-definition.*
+docker-compose.*
+Jenkinsfile
+Makefile
+*.md
