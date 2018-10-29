@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.69.11",
+            "version": "3.69.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c8796a6cc29018d0c96a501010f22e99bf31814b"
+                "reference": "eda89d207e40f3abb0b5e2fb1fabcebe668116fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c8796a6cc29018d0c96a501010f22e99bf31814b",
-                "reference": "c8796a6cc29018d0c96a501010f22e99bf31814b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eda89d207e40f3abb0b5e2fb1fabcebe668116fb",
+                "reference": "eda89d207e40f3abb0b5e2fb1fabcebe668116fb",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-10-19T20:47:57+00:00"
+            "time": "2018-10-26T20:05:18+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -150,7 +150,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor.git",
-                "reference": "c0a020b7d70205b49af655ee660fc20ebbb31643"
+                "reference": "6e8ee5a616f70c193f3909b85160033576238601"
             },
             "require": {
                 "ext-curl": "*",
@@ -190,7 +190,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-19T10:06:28+00:00"
+            "time": "2018-10-25T11:59:41+00:00"
         },
         {
             "name": "cloud-doctor/provider-aws",
@@ -198,14 +198,13 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor-AWS.git",
-                "reference": "8097cb7e76f88fbfad2cac74cf9069c7be40e1fe"
+                "reference": "f984ac6fd1d4906e48c2878ccf9f585ed7fbc9a4"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.67.22",
                 "ext-curl": "*",
                 "ext-json": "*",
-                "php": "^7.2",
-                "violuke/rsa-ssh-key-fingerprint": "^1.0"
+                "php": "^7.2"
             },
             "type": "library",
             "autoload": {
@@ -222,7 +221,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-19T10:06:28+00:00"
+            "time": "2018-10-25T11:16:43+00:00"
         },
         {
             "name": "cloud-doctor/provider-linode",
@@ -1009,16 +1008,16 @@
         },
         {
             "name": "rollbar/rollbar",
-            "version": "v1.6.3",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rollbar/rollbar-php.git",
-                "reference": "149590adc3bd5ed1188c48f8159f257aa1bf2d19"
+                "reference": "d0553cfb6e13de0c6667563ec58220895c8f9677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rollbar/rollbar-php/zipball/149590adc3bd5ed1188c48f8159f257aa1bf2d19",
-                "reference": "149590adc3bd5ed1188c48f8159f257aa1bf2d19",
+                "url": "https://api.github.com/repos/rollbar/rollbar-php/zipball/d0553cfb6e13de0c6667563ec58220895c8f9677",
+                "reference": "d0553cfb6e13de0c6667563ec58220895c8f9677",
                 "shasum": ""
             },
             "require": {
@@ -1065,7 +1064,7 @@
                 "logging",
                 "monitoring"
             ],
-            "time": "2018-09-06T21:34:17+00:00"
+            "time": "2018-10-19T12:34:15+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -1247,39 +1246,6 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2018-10-02T16:36:10+00:00"
-        },
-        {
-            "name": "violuke/rsa-ssh-key-fingerprint",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/violuke/rsa-ssh-key-fingerprint.git",
-                "reference": "6ad4b3a598b9af1ad61a21d5a481aceb1475aaeb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/violuke/rsa-ssh-key-fingerprint/zipball/6ad4b3a598b9af1ad61a21d5a481aceb1475aaeb",
-                "reference": "6ad4b3a598b9af1ad61a21d5a481aceb1475aaeb",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "violuke\\RsaSshKeyFingerprint": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "description": "Generate a fingerprint from an RSA SSH public key.",
-            "time": "2017-05-30T21:41:30+00:00"
         }
     ],
     "packages-dev": [],
