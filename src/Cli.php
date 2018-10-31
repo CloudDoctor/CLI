@@ -25,6 +25,7 @@ class Cli
             --download-certs Download SSL certificates from master
             --update-stacks Update Docker Swarm stackfiles
             --update-meta Update metadata stored with providers
+            --dns Update DNS Records
             --purge Purge everything deployed. Danger will robinson!
             --scale Check scalings
             --watch Wait for changes to settings files and run --scale when it changes!
@@ -68,6 +69,12 @@ class Cli
         $this->menu->addItem('Purge (Destroy Everything!)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->purge();
+            $menu->redraw();
+        });
+
+        $this->menu->addItem('DNS (Update DNS Records)', function (CliMenu $menu) use ($scope) {
+            /** @var CloudDoctor $scope */
+            $scope->cloudDoctor->deploy_dnsEnforce();
             $menu->redraw();
         });
 
@@ -129,6 +136,9 @@ class Cli
                     break;
                 case 'purge':
                     $this->cloudDoctor->purge();
+                    break;
+                case 'dns':
+                    $this->cloudDoctor->deploy_dnsEnforce();
                     break;
                 case 'scale':
                     $this->cloudDoctor->scale();
