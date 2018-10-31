@@ -18,6 +18,8 @@ RUN mkdir /etc/container_environment && \
     php7-zip \
     php7-curl \
     php7-posix \
+    php7-xml \
+    php7-xmlwriter \
     bash \
     ncurses \
     coreutils \
