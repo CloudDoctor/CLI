@@ -4,8 +4,6 @@ namespace CloudDoctor;
 use CLIOpts\CLIOpts;
 use PhpSchool\CliMenu\CliMenu;
 use PhpSchool\CliMenu\CliMenuBuilder;
-use PhpSchool\CliMenu\MenuItem\AsciiArtItem;
-use PhpSchool\CliMenu\MenuItem\SelectableItem;
 
 class Cli
 {
@@ -15,27 +13,6 @@ class Cli
 
     /** @var CloudDoctor */
     protected $cloudDoctor;
-
-    private function checkForArguments()
-    {
-        $arguments = "
-            Usage: {self} [options]
-            -s --show Show the stack as CloudDoctor understands it
-            -D --deploy Run Deployment
-            --download-certs Download SSL certificates from master
-            --update-stacks Update Docker Swarm stackfiles
-            --update-meta Update metadata stored with providers
-            --dns Update DNS Records
-            --purge Purge everything deployed. Danger will robinson!
-            --scale Check scalings
-            --watch Wait for changes to settings files and run --scale when it changes!
-            ";
-        $arguments.="-h --help Show this help\n";
-
-        $values = CLIOpts::run($arguments);
-
-        return $values;
-    }
 
     public function __construct(CloudDoctor $cloudDoctor = null)
     {
@@ -115,6 +92,27 @@ class Cli
         } else {
             $this->runInteractive();
         }
+    }
+
+    private function checkForArguments()
+    {
+        $arguments = "
+            Usage: {self} [options]
+            -s --show Show the stack as CloudDoctor understands it
+            -D --deploy Run Deployment
+            --download-certs Download SSL certificates from master
+            --update-stacks Update Docker Swarm stackfiles
+            --update-meta Update metadata stored with providers
+            --dns Update DNS Records
+            --purge Purge everything deployed. Danger will robinson!
+            --scale Check scalings
+            --watch Wait for changes to settings files and run --scale when it changes!
+            ";
+        $arguments.="-h --help Show this help\n";
+
+        $values = CLIOpts::run($arguments);
+
+        return $values;
     }
 
     private function runInteractive()
