@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.70.0",
+            "version": "3.74.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "49c563dfdf890ac510f441c9ae5537ffc2de8ccf"
+                "reference": "e02575af8021ee57b818107c1fd8759110374044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/49c563dfdf890ac510f441c9ae5537ffc2de8ccf",
-                "reference": "49c563dfdf890ac510f441c9ae5537ffc2de8ccf",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e02575af8021ee57b818107c1fd8759110374044",
+                "reference": "e02575af8021ee57b818107c1fd8759110374044",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-10-30T20:50:23+00:00"
+            "time": "2018-11-21T19:18:43+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -150,7 +150,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor.git",
-                "reference": "6e8ee5a616f70c193f3909b85160033576238601"
+                "reference": "5db391dfa7e4c0d08ee84c965c5c32cb938a3d31"
             },
             "require": {
                 "ext-curl": "*",
@@ -190,7 +190,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-25T11:59:41+00:00"
+            "time": "2018-11-09T13:14:08+00:00"
         },
         {
             "name": "cloud-doctor/provider-aws",
@@ -198,7 +198,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor-AWS.git",
-                "reference": "db9fd51a23014fcd2cdab52b8d2c2535582c7d63"
+                "reference": "f45e2a5e0949250f28d8dbf034c88a6e1a95989e"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.67.22",
@@ -221,7 +221,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-31T10:04:25+00:00"
+            "time": "2018-11-09T13:14:08+00:00"
         },
         {
             "name": "cloud-doctor/provider-linode",
@@ -229,7 +229,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor-Linode.git",
-                "reference": "0707212e8509883a2365bf137eaa40bad09acf53"
+                "reference": "301d527040ca98e0fbc6804a1a75b010258c44b5"
             },
             "require": {
                 "ext-curl": "*",
@@ -252,7 +252,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-10-18T17:46:19+00:00"
+            "time": "2018-11-09T13:14:08+00:00"
         },
         {
             "name": "deweller/cliopts",
@@ -584,16 +584,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.23.0",
+            "version": "1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4"
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
                 "shasum": ""
             },
             "require": {
@@ -658,7 +658,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2018-11-05T09:00:11+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -771,16 +771,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.11",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "7053f06f91b3de78e143d430e55a8f7889efc08b"
+                "reference": "8814dc7841db159daed0b32c2b08fb7e03c6afe7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/7053f06f91b3de78e143d430e55a8f7889efc08b",
-                "reference": "7053f06f91b3de78e143d430e55a8f7889efc08b",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/8814dc7841db159daed0b32c2b08fb7e03c6afe7",
+                "reference": "8814dc7841db159daed0b32c2b08fb7e03c6afe7",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +859,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2018-04-15T16:55:05+00:00"
+            "time": "2018-11-04T05:45:48+00:00"
         },
         {
             "name": "psr/http-message",
@@ -913,16 +913,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -956,20 +956,20 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "rahimi/monolog-telegram",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moeinrahimi/monolog-telegram.git",
-                "reference": "c4ec3c13960ef9c3104f2feed6c62288e167f834"
+                "reference": "ff168c46ea8607ae06fadeebfe94bad4ccd0563d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moeinrahimi/monolog-telegram/zipball/c4ec3c13960ef9c3104f2feed6c62288e167f834",
-                "reference": "c4ec3c13960ef9c3104f2feed6c62288e167f834",
+                "url": "https://api.github.com/repos/moeinrahimi/monolog-telegram/zipball/ff168c46ea8607ae06fadeebfe94bad4ccd0563d",
+                "reference": "ff168c46ea8607ae06fadeebfe94bad4ccd0563d",
                 "shasum": ""
             },
             "require": {
@@ -1004,20 +1004,20 @@
                 "monolog-telegram",
                 "telegram"
             ],
-            "time": "2018-03-13T07:40:45+00:00"
+            "time": "2018-11-18T09:13:54+00:00"
         },
         {
             "name": "rollbar/rollbar",
-            "version": "v1.7.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rollbar/rollbar-php.git",
-                "reference": "d0553cfb6e13de0c6667563ec58220895c8f9677"
+                "reference": "c2f8be87983ecdd3c46ceb3c459de02376af4707"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rollbar/rollbar-php/zipball/d0553cfb6e13de0c6667563ec58220895c8f9677",
-                "reference": "d0553cfb6e13de0c6667563ec58220895c8f9677",
+                "url": "https://api.github.com/repos/rollbar/rollbar-php/zipball/c2f8be87983ecdd3c46ceb3c459de02376af4707",
+                "reference": "c2f8be87983ecdd3c46ceb3c459de02376af4707",
                 "shasum": ""
             },
             "require": {
@@ -1064,20 +1064,20 @@
                 "logging",
                 "monitoring"
             ],
-            "time": "2018-10-19T12:34:15+00:00"
+            "time": "2018-11-12T12:03:55+00:00"
         },
         {
             "name": "sentry/sentry",
-            "version": "1.9.2",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "6b4c80ee1f5d9d5ab5bae949f4eb5d758a0bf64b"
+                "reference": "b2b8ffe1560b9fb0110b02993594a4b04a511959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/6b4c80ee1f5d9d5ab5bae949f4eb5d758a0bf64b",
-                "reference": "6b4c80ee1f5d9d5ab5bae949f4eb5d758a0bf64b",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/b2b8ffe1560b9fb0110b02993594a4b04a511959",
+                "reference": "b2b8ffe1560b9fb0110b02993594a4b04a511959",
                 "shasum": ""
             },
             "require": {
@@ -1128,11 +1128,11 @@
                 "log",
                 "logging"
             ],
-            "time": "2018-08-18T19:41:03+00:00"
+            "time": "2018-11-09T12:27:19+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.9.0",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -1190,7 +1190,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.6",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
