@@ -55,6 +55,12 @@ class Cli
             $menu->redraw();
         });
 
+        $this->menu->addItem('Reassert Swarm', function(CliMenu $menu) use ($scope) {
+           /** @var CloudDoctor $scope */
+           $scope->cloudDoctor->deploy_swarmify();
+           $menu->redraw();
+        });
+
         $this->menu->addItem('Download Certificates (Force-pull the Swarm Certs)', function (CliMenu $menu) use ($scope) {
             /** @var CloudDoctor $scope */
             $scope->cloudDoctor->downloadCerts();
@@ -104,6 +110,7 @@ class Cli
             --update-stacks Update Docker Swarm stackfiles
             --update-meta Update metadata stored with providers
             --dns Update DNS Records
+            --swarm (Re-)Assert Docker Swarm
             --purge Purge everything deployed. Danger will robinson!
             --scale Check scalings
             --watch Wait for changes to settings files and run --scale when it changes!
@@ -137,6 +144,9 @@ class Cli
                     break;
                 case 'dns':
                     $this->cloudDoctor->deploy_dnsEnforce();
+                    break;
+                case 'swarm':
+                    $this->cloudDoctor->deploy_swarmify();
                     break;
                 case 'scale':
                     $this->cloudDoctor->scale();
