@@ -8,6 +8,7 @@ RUN mkdir /etc/container_environment && \
     mkdir /etc/runit_init.d && \
     apk add --update \
     runit \
+    openssh-client \
     php7 \
     php7-common \
     php7-openssl \

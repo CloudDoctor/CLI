@@ -114,6 +114,7 @@ class Cli
             --purge Purge everything deployed. Danger will robinson!
             --scale Check scalings
             --watch Wait for changes to settings files and run --scale when it changes!
+            -c --connect SSH into a manager instance
             ";
         $arguments.="-h --help Show this help\n";
 
@@ -162,6 +163,9 @@ class Cli
                     break;
                 case 'update-stacks':
                     $this->cloudDoctor->updateStacks();
+                    break;
+                case 'connect':
+                    $this->cloudDoctor->terminalConnect();
                     break;
                 default:
                     foreach ($this->getApplicationSpecificCommands() as $command) {
