@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.74.1",
+            "version": "3.76.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e02575af8021ee57b818107c1fd8759110374044"
+                "reference": "ae331953146493aa71853b5c675f0b7b48c9c952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e02575af8021ee57b818107c1fd8759110374044",
-                "reference": "e02575af8021ee57b818107c1fd8759110374044",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ae331953146493aa71853b5c675f0b7b48c9c952",
+                "reference": "ae331953146493aa71853b5c675f0b7b48c9c952",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-11-21T19:18:43+00:00"
+            "time": "2018-11-27T05:14:58+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -150,7 +150,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor.git",
-                "reference": "5db391dfa7e4c0d08ee84c965c5c32cb938a3d31"
+                "reference": "4f7fd7797669ab66fea8a2051b9323f10520a5c8"
             },
             "require": {
                 "ext-curl": "*",
@@ -190,7 +190,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-11-09T13:14:08+00:00"
+            "time": "2018-11-27T18:09:23+00:00"
         },
         {
             "name": "cloud-doctor/provider-aws",
@@ -198,7 +198,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.gone.io:Gone.io/Cloud-Doctor-AWS.git",
-                "reference": "f45e2a5e0949250f28d8dbf034c88a6e1a95989e"
+                "reference": "bfe1ec864eca7936ebddd58504c6fb13dee6b4bd"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.67.22",
@@ -221,7 +221,7 @@
                     "email": "matthew@baggett.me"
                 }
             ],
-            "time": "2018-11-09T13:14:08+00:00"
+            "time": "2018-11-23T16:27:28+00:00"
         },
         {
             "name": "cloud-doctor/provider-linode",
@@ -1190,16 +1190,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "367e689b2fdc19965be435337b50bc8adf2746c9"
+                "reference": "fe87e3b24d15ec8948f0280ee867a65ca44fdbaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/367e689b2fdc19965be435337b50bc8adf2746c9",
-                "reference": "367e689b2fdc19965be435337b50bc8adf2746c9",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/fe87e3b24d15ec8948f0280ee867a65ca44fdbaa",
+                "reference": "fe87e3b24d15ec8948f0280ee867a65ca44fdbaa",
                 "shasum": ""
             },
             "require": {
@@ -1245,7 +1245,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:36:10+00:00"
+            "time": "2018-11-11T19:51:29+00:00"
         }
     ],
     "packages-dev": [],
